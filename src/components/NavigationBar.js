@@ -6,10 +6,32 @@ import styled from "styled-components";
 const Styles = styled.div`
   .navbar {
     background-color: #000;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    /*  letter-spacing: 0.2px;*/
+  }
+  @media only screen and (max-width: 1200px) {
+    .navbar {
+      font-size: 14px;
+      /*  letter-spacing: 0.3px;*/
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .navbar {
+      font-size: 17px;
+      letter-spacing: 0.2px;
+    }
+  }
+  .toggle-text {
+    color: #ffffff;
+    &:hover {
+      color: #007cb0;
+    }
   }
   .navbar-brand,
   .nav-link {
-    min-height: 68px;
+    min-height: 70px;
     display: flex;
     align-items: center;
   }
@@ -18,7 +40,16 @@ const Styles = styled.div`
     color: #fff;
 
     &:hover {
-      color: #006996;
+      color: #007cb0;
+    }
+  }
+  .contact-sales {
+    color: white;
+    background-color: #007cb0;
+
+    &:hover {
+      color: white !important;
+      background-color: #006996;
     }
   }
 `;
@@ -28,7 +59,7 @@ export const NavigationBar = () => (
     <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Navbar.Brand href="#home">Ready Robotics</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav">
-        <span>Menu</span>
+        <span className="toggle-text">Menu</span>
       </Navbar.Toggle>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
@@ -59,14 +90,14 @@ export const NavigationBar = () => (
           <Nav.Link href="#careers">Careers</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#customer-portal">
-            <img
-              src="https://img.icons8.com/small/32/000000/contacts.png"
-              alt="user icon"
-            />
+          <Nav.Link className="customer-portal" href="#customer-portal">
             Customer Portal
           </Nav.Link>
-          <Nav.Link eventKey={2} href="#contact-sales">
+          <Nav.Link
+            className="contact-sales"
+            eventKey={2}
+            href="#contact-sales"
+          >
             Contact Sales
           </Nav.Link>
         </Nav>

@@ -1,14 +1,29 @@
 import React from "react";
 import { Jumbotron as Jumbo, Button, Container } from "react-bootstrap";
 import styled from "styled-components";
-import grey from "./assets/grey.jpg";
+import homeRectangle from "./assets/homeRectangle.png";
 
 const Styles = styled.div`
+  .hero-button {
+    height: 48px;
+    width: 175px;
+    border-radius: 3px;
+    background-color: #007cb0;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    text-align: center;
+    &:hover {
+      color: #efefef !important;
+      background-color: #006996;
+    }
+  }
   .jumbo {
-    background: url(${grey}) no-repeat fixed center bottom;
+    background: url(${homeRectangle}) no-repeat fixed center bottom;
     background-size: cover;
     color: #efefef;
-    /*color: black;*/
     height: 900px;
     position: relative;
   }
@@ -20,18 +35,38 @@ const Styles = styled.div`
     padding-top: 30vh;
   }
   .text {
-    font-size: 3.9vw;
-    letter-spacing: -2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    font-weight: bold;
   }
   .other-text {
-    font-size: 1.5vw;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.33px;
+    line-height: 3.5vh;
+    margin-top: 13px;
+    max-width: 750px;
   }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1200px) {
     .text {
-      font-size: 32px;
+      font-size: 48px;
+      font-weight: bold;
     }
     .other-text {
-      font-size: 16px;
+      font-size: 20px;
+      letter-spacing: 0.3px;
+      line-height: 3vh;
+    }
+  }
+  @media only screen and (min-width: 1800px) {
+    .text {
+      font-size: 3.8vw;
+      font-weight: bold;
+    }
+    .other-text {
+      font-size: 1.15vw;
+      letter-spacing: 0.4px;
+      line-height: 3.7vh;
     }
   }
 `;
@@ -49,7 +84,9 @@ export const Jumbotron = () => (
           five centuries, but also the leap into electronic typesetting.
         </p>
         <p>
-          <Button variant="primary">Our Products</Button>
+          <Button className="hero-button" variant="primary" size="lg">
+            Our Products
+          </Button>
         </p>
       </Container>
     </Jumbo>
