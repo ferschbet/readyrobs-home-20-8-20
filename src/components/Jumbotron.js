@@ -4,35 +4,26 @@ import styled from "styled-components";
 import homeRectangle from "./assets/homeRectangle.png";
 
 const Styles = styled.div`
-  .hero-button {
-    height: 48px;
-    width: 175px;
-    border-radius: 3px;
-    background-color: #007cb0;
-    color: #ffffff;
-    font-family: Roboto;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    line-height: 16px;
-    text-align: center;
-    &:hover {
-      color: #efefef !important;
-      background-color: #006996;
-    }
-  }
   .jumbo {
-    background: url(${homeRectangle}) no-repeat fixed center bottom;
+    background: url(${homeRectangle}) no-repeat fixed center center;
     background-size: cover;
-    color: #efefef;
-    height: 900px;
+    width: 100%;
+    height: 850px;
     position: relative;
+    z-index: -2;
   }
   .jumbo-container {
     width: 100vw;
+    color: #efefef;
     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     padding-left: 8%;
     padding-right: 8%;
-    padding-top: 30vh;
+    padding-top: 20vh;
+    z-index: -1;
   }
   .text {
     font-family: "Roboto", sans-serif;
@@ -67,6 +58,22 @@ const Styles = styled.div`
       font-size: 1.15vw;
       letter-spacing: 0.4px;
       line-height: 3.7vh;
+    }
+  }
+  .hero-button {
+    height: 48px;
+    width: 175px;
+    border-radius: 3px;
+    background-color: #007cb0;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    text-align: center;
+    &:hover {
+      color: #efefef !important;
+      background-color: #006996;
     }
   }
 `;

@@ -1,6 +1,5 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-/*import "./NavigationBar.css";*/
 import styled from "styled-components";
 
 const Styles = styled.div`
@@ -9,12 +8,10 @@ const Styles = styled.div`
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     font-weight: lighter;
-    /*  letter-spacing: 0.2px;*/
   }
   @media only screen and (max-width: 1200px) {
     .navbar {
       font-size: 14px;
-      /*  letter-spacing: 0.3px;*/
     }
   }
   @media only screen and (min-width: 1800px) {
@@ -32,6 +29,7 @@ const Styles = styled.div`
   .navbar-brand,
   .nav-link {
     min-height: 70px;
+    margin-left: 30px;
     display: flex;
     align-items: center;
   }
@@ -42,6 +40,9 @@ const Styles = styled.div`
     &:hover {
       color: #007cb0;
     }
+  }
+  .nav-brand {
+    margin-left: 30px;
   }
   .contact-sales {
     color: white;
@@ -56,8 +57,10 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Ready Robotics</Navbar.Brand>
+    <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand className="nav-brand" href="#home">
+        Ready Robotics
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav">
         <span className="toggle-text">Menu</span>
       </Navbar.Toggle>
