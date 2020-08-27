@@ -20,12 +20,14 @@ const Styles = styled.div`
   }
   .card2 {
     text-align: center;
-    height: auto;
-    width: auto;
+    height: 24.9rem;
+    width: 16.5rem;
   }
   .cont-img {
-    width: 75%;
+    /*    width: 75%;*/
     height: auto;
+    /*margin-top: 20px;*/
+    margin-bottom: 80px;
   }
   .card2-text {
     color: #282a2b;
@@ -65,7 +67,9 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button">View Product</Button>
+              <Button className="card2-button" size="lg" block>
+                View Product
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -81,7 +85,9 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button">View Product</Button>
+              <Button className="card2-button" size="lg" block>
+                View Product
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -97,7 +103,9 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button">View Product</Button>
+              <Button className="card2-button" size="lg" block>
+                View Product
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -113,7 +121,9 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button">View Product</Button>
+              <Button className="card2-button" size="lg" block>
+                View Product
+              </Button>
             </Card.Body>
           </Card>
         </Col>

@@ -9,22 +9,57 @@ const Styles = styled.div`
   .quick-container {
     background-color: #f5f5f8;
     height: auto;
-    /*    max-width: 1440px;*/
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
+    align-items: center;
   }
   .quick-shop {
     height: 30px;
     margin-bottom: 3rem;
-    margin-left: 5rem;
+    margin-left: 8.5rem;
     /*    margin-top: 5rem;*/
   }
+  .quick-row {
+    align-items: center;
+    vertical-align: center;
 
+    /*    margin: 5rem;*/
+  }
+  .quick-col {
+    max-width: 25rem;
+    margin: auto;
+  }
   .card1 {
     text-align: center;
+    align-items: center;
+    /*    height: 29.7rem;*/
+    height: 35rem;
+    max-width: 22.6rem;
+    min-width: 18rem;
+    width: auto;
+  }
+  .imgc1a {
+    height: 235px;
+    max-width: 278.4px;
+    width: auto;
+    margin-bottom: 100px;
+  }
+  .imgc1b {
+    height: 235px;
+    width: 225px;
+    margin-bottom: 100px;
+  }
+  .imgc1c {
+    height: 279px;
+    width: 192px;
+    margin-bottom: 57px;
+  }
+  .card1-body {
+    align-items: left;
   }
   .card1-title {
     text-align: left;
+    vertical-align: text-bottom;
   }
   .card1-text {
     text-align: left;
@@ -38,6 +73,11 @@ const Styles = styled.div`
       background-color: #006996;
     }
   }
+  @media only screen and (min-width: 1800px) {
+    .card1 {
+      max-width: 32rem;
+    }
+  }
 `;
 
 export const Quickshop = () => (
@@ -46,47 +86,63 @@ export const Quickshop = () => (
       <div className="quick-shop">
         <h1>Quick Shop</h1>
       </div>
-      <Row className="mr-5 mb-3 ml-5">
-        <Col md={4}>
-          <Card className="card1 mb-3">
-            <Card.Body>
-              <Card.Img
-                className="imgc1"
-                variant="top"
-                src={card1a}
-                alt="image card1a"
-              />
+      <Row className="quick-row">
+        <Col lg={4} md={6} className="quick-col">
+          <Card className="card1">
+            <Card.Img
+              className="imgc1a"
+              variant="top"
+              src={card1a}
+              alt="image card1a"
+            />
+            <Card.Body className="card1-body">
               <Card.Title className="card1-title">
                 Automation Packages
               </Card.Title>
               <Card.Text className="card1-text">
                 Lorem Ipsum is simply dummy text of the printing a and industry.
               </Card.Text>
-              <Button className="card1-button mt-auto">Learn More</Button>
+              <Button className="card1-button" size="lg" block>
+                Learn More
+              </Button>
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
-          <Card className="card1 mb-3">
+        <Col lg={4} md={6} className="quick-col">
+          <Card className="card1">
             <Card.Body>
-              <Card.Img variant="top" src={card1b} alt="image card1b" />
+              <Card.Img
+                className="imgc1b"
+                variant="top"
+                src={card1b}
+                alt="image card1b"
+              />
               <Card.Title className="card1-title">Forge Bundles</Card.Title>
               <Card.Text className="card1-text">
                 Lorem Ipsum is simply dummy text of the printing a and industry.
               </Card.Text>
-              <Button className="card1-button mt-auto">Learn More</Button>
+              <Button className="card1-button mt-auto" size="lg" block>
+                Learn More
+              </Button>
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
-          <Card className="card1 mb-3">
+        <Col lg={4} md={6} className="quick-col">
+          <Card className="card1">
             <Card.Body>
-              <Card.Img variant="top" src={card1c} alt="image card1c" />
+              <Card.Img
+                className="imgc1c"
+                variant="top"
+                src={card1c}
+                alt="image card1c"
+              />
               <Card.Title className="card1-title">Forge Station</Card.Title>
               <Card.Text className="card1-text">
                 Lorem Ipsum is simply dummy text of the printing a and industry.
               </Card.Text>
-              <Button className="card1-button mt-auto">Learn More</Button>
+              <Button className="card1-button mt-auto" size="lg" block>
+                Learn More
+              </Button>
             </Card.Body>
           </Card>
         </Col>
