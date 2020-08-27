@@ -10,6 +10,7 @@ import { NavigationBar } from "./components/NavigationBar";
 import { NoMatch } from "./NoMatch";
 import { Products } from "./Products";
 import { Quickshop } from "./components/Quickshop";
+import { Solutions } from "./components/Solutions";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Quickshop />
       <MostPopular />
       <Work />
+      <Solutions />
       <Layout>
         <Router>
           <Switch>

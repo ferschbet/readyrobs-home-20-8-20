@@ -16,17 +16,16 @@ const Styles = styled.div`
   .quick-shop {
     height: 30px;
     margin-bottom: 3rem;
-    margin-left: 8.5rem;
-    /*    margin-top: 5rem;*/
+    text-align: left;
+    margin-left: 8rem;
   }
   .quick-row {
     align-items: center;
     vertical-align: center;
-
     /*    margin: 5rem;*/
   }
   .quick-col {
-    max-width: 25rem;
+    max-width: 30rem;
     margin: auto;
   }
   .card1 {
@@ -78,13 +77,28 @@ const Styles = styled.div`
       max-width: 32rem;
     }
   }
+  @media only screen and (max-width: 800px) {
+    .quick-shop {
+      align-items: center;
+      text-align: center;
+      margin-left: auto;
+    }
+    .quick-row {
+      align-items: center;
+      vertical-align: center;
+      margin-left: 2rem;
+    }
+    .quick-text {
+      font-size: 36px;
+    }
+  }
 `;
 
 export const Quickshop = () => (
   <Styles>
     <Container className="quick-container" fluid>
       <div className="quick-shop">
-        <h1>Quick Shop</h1>
+        <h1 className="quick-text">Quick Shop</h1>
       </div>
       <Row className="quick-row">
         <Col lg={4} md={6} className="quick-col">

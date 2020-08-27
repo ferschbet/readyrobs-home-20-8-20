@@ -18,10 +18,15 @@ const Styles = styled.div`
     margin-left: 5rem;
     margin-top: 5rem;
   }
+  .pop-col {
+    max-width: 30rem;
+    margin: auto;
+  }
   .card2 {
     text-align: center;
     height: 24.9rem;
     width: 16.5rem;
+    border: 1px solid #979797;
   }
   .cont-img {
     /*    width: 75%;*/
@@ -46,16 +51,33 @@ const Styles = styled.div`
       background-color: #006996;
     }
   }
+  @media only screen and (max-width: 800px) {
+    .most-popular {
+      align-items: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pop-row {
+      align-items: center;
+      vertical-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pop-text {
+      font-size: 36px;
+    }
+  }
 `;
 
 export const MostPopular = () => (
   <Styles>
     <Container className="pop-container" fluid>
       <div className="most-popular">
-        <h1>Most Popular</h1>
+        <h1 className="pop-text">Most Popular</h1>
       </div>
-      <Row className="mr-5 mb-5 ml-5">
-        <Col lg={3} md={6}>
+      <Row className="pop-row mr-5 mb-5 ml-5">
+        <Col lg={3} md={6} className="pop-col">
           <Card className="card2 mb-3">
             <Card.Body>
               <Card.Img
@@ -73,7 +95,7 @@ export const MostPopular = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={3} md={6}>
+        <Col lg={3} md={6} className="pop-col">
           <Card className="card2 mb-3">
             <Card.Body>
               <Card.Img
@@ -91,7 +113,7 @@ export const MostPopular = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={3} md={6}>
+        <Col lg={3} md={6} className="pop-col">
           <Card className="card2 mb-3">
             <Card.Body>
               <Card.Img
@@ -109,7 +131,7 @@ export const MostPopular = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={3} md={6}>
+        <Col lg={3} md={6} className="pop-col">
           <Card className="card2 mb-3">
             <Card.Body>
               <Card.Img
