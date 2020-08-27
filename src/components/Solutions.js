@@ -13,8 +13,8 @@ import card3h from "./assets/card3h.png";
 const Styles = styled.div`
   .solutions-container {
     margin-top: 5rem;
-    max-height: 678px;
     width: auto;
+    margin-bottom: 100px;
   }
   .sol-container1 {
     height: auto;
@@ -72,6 +72,35 @@ const Styles = styled.div`
     }
   }
   @media only screen and (max-width: 800px) {
+    .solutions-container {
+      margin-bottom: 45rem;
+    }
+    .solutions {
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .sol-row {
+      align-items: center;
+      vertical-align: center;
+      margin-left: 4rem;
+      margin-right: auto;
+    }
+    .sol-text {
+      padding-bottom: 1rem;
+    }
+    .card3 {
+      text-align: center;
+      height: 12rem;
+      width: 15rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media only screen and (min-width: 801px) and (max-width: 1000px) {
+    .solutions-container {
+      margin-bottom: 25rem;
+    }
     .solutions {
       margin-left: auto;
       margin-right: auto;
@@ -83,8 +112,12 @@ const Styles = styled.div`
       margin-right: auto;
     }
     .sol-text {
-      font-size: 28px;
       padding-bottom: 2rem;
+    }
+    .card3 {
+      text-align: center;
+      height: 12rem;
+      width: 15rem;
     }
   }
 `;

@@ -31,6 +31,9 @@ const Styles = styled.div`
     padding: 2rem 5rem 0 0;
   }
   @media only screen and (max-width: 1200px) {
+    .work-container {
+      padding: 5rem 0 5rem;
+    }
     .work-title {
       font-size: 48px;
       font-weight: bold;

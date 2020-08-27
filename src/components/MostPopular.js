@@ -52,8 +52,11 @@ const Styles = styled.div`
     }
   }
   @media only screen and (max-width: 800px) {
+    .pop-container {
+      margin-left: 2.7rem;
+      margin-right: auto;
+    }
     .most-popular {
-      align-items: center;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -61,6 +64,10 @@ const Styles = styled.div`
     .pop-row {
       align-items: center;
       vertical-align: center;
+      /*margin-left: auto;
+      margin-right: auto;*/
+    }
+    .pop-col {
       margin-left: auto;
       margin-right: auto;
     }

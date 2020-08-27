@@ -11,6 +11,7 @@ import { NoMatch } from "./NoMatch";
 import { Products } from "./Products";
 import { Quickshop } from "./components/Quickshop";
 import { Solutions } from "./components/Solutions";
+import { Sales } from "./components/Sales";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <MostPopular />
       <Work />
       <Solutions />
+      <Sales />
       <Layout>
         <Router>
           <Switch>
