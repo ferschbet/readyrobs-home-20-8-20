@@ -9,7 +9,7 @@ const Styles = styled.div`
     width: 100vw;
     color: black;
     margin-top: 10rem;
-    height: 400px;
+    height: 350px;
     text-align: center;
   }
   .other-div {
@@ -41,6 +41,9 @@ const Styles = styled.div`
     }
   }
   @media only screen and (max-width: 800px) {
+    .sales-container {
+      height: 400px;
+    }
     .other-div {
       font-size: 20px;
       letter-spacing: 0.3px;

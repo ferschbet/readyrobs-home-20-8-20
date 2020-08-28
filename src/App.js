@@ -12,6 +12,7 @@ import { Products } from "./Products";
 import { Quickshop } from "./components/Quickshop";
 import { Solutions } from "./components/Solutions";
 import { Sales } from "./components/Sales";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Work />
       <Solutions />
       <Sales />
+      <Footer />
       <Layout>
         <Router>
           <Switch>
