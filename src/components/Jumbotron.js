@@ -22,22 +22,29 @@ const Styles = styled.div`
       background-color: #006996 !important;
     }
   }
-  .jumbo {
-    background: url(${homeRectangle}) no-repeat fixed center bottom;
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-    position: relative;
-    margin-bottom: 0;
-  }
   .jumbo-container {
     width: 100vw;
     color: #efefef;
     position: absolute;
+    z-index: 3;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 20vh;
   }
+  .jumbo {
+    background: url(${homeRectangle}) no-repeat scroll center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 0;
+  }
+
   .text {
     font-family: "Roboto", sans-serif;
     font-size: 56px;

@@ -176,12 +176,12 @@ export const Footer = () => (
           <p>
             <a href="#facebook" className="facebook-link">
               <span>
-                <i class="fab fa-facebook-square"></i>{" "}
+                <i className="fab fa-facebook-square"></i>{" "}
               </span>
             </a>
             <a href="#twitter" className="twitter-link">
               <span>
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </span>
             </a>
           </p>

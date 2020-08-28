@@ -8,6 +8,8 @@ const Styles = styled.div`
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     font-weight: lighter;
+    margin-right: -15px;
+    padding: 0 16px;
   }
   @media only screen and (max-width: 1200px) {
     .navbar {
@@ -28,7 +30,7 @@ const Styles = styled.div`
   }
   .navbar-brand,
   .nav-link {
-    min-height: 70px;
+    min-height: 80px;
     margin-left: 30px;
     display: flex;
     align-items: center;
@@ -47,7 +49,7 @@ const Styles = styled.div`
   .contact-sales {
     color: white;
     background-color: #007cb0;
-
+    margin-top: 0px;
     &:hover {
       color: white !important;
       background-color: #006996;
