@@ -15,6 +15,7 @@ const Styles = styled.div`
     letter-spacing: 0.5px;
     line-height: 16px;
     text-align: center;
+    vertical-align: center;
 
     &:hover {
       color: white !important;
@@ -87,9 +88,11 @@ export const Jumbotron = () => (
           five centuries, but also the leap into electronic typesetting.
         </p>
         <p>
-          <Button className="hero-button" size="lg">
-            Our Products
-          </Button>
+          <a href="#products" className="hero-button">
+            <Button className="hero-button" size="lg">
+              Our Products
+            </Button>
+          </a>
         </p>
       </Container>
     </Jumbo>

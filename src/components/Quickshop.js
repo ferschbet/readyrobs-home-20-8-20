@@ -116,9 +116,11 @@ export const Quickshop = () => (
               <Card.Text className="card1-text">
                 Lorem Ipsum is simply dummy text of the printing a and industry.
               </Card.Text>
-              <Button className="card1-button" size="lg" block>
-                Learn More
-              </Button>
+              <a href="#products">
+                <Button className="card1-button" size="lg" block>
+                  Learn More
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Col>
@@ -135,9 +137,11 @@ export const Quickshop = () => (
               <Card.Text className="card1-text">
                 Lorem Ipsum is simply dummy text of the printing a and industry.
               </Card.Text>
-              <Button className="card1-button mt-auto" size="lg" block>
-                Learn More
-              </Button>
+              <a href="#products">
+                <Button className="card1-button" size="lg" block>
+                  Learn More
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Col>
@@ -154,9 +158,11 @@ export const Quickshop = () => (
               <Card.Text className="card1-text">
                 Lorem Ipsum is simply dummy text of the printing a and industry.
               </Card.Text>
-              <Button className="card1-button mt-auto" size="lg" block>
-                Learn More
-              </Button>
+              <a href="#products">
+                <Button className="card1-button" size="lg" block>
+                  Learn More
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Col>

@@ -96,9 +96,11 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button" size="lg" block>
-                View Product
-              </Button>
+              <a href="#products">
+                <Button className="card2-button" size="lg" block>
+                  View Product
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Col>
@@ -114,9 +116,11 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button" size="lg" block>
-                View Product
-              </Button>
+              <a href="#products">
+                <Button className="card2-button" size="lg" block>
+                  View Product
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Col>
@@ -132,9 +136,11 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button" size="lg" block>
-                View Product
-              </Button>
+              <a href="#products">
+                <Button className="card2-button" size="lg" block>
+                  View Product
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Col>
@@ -150,9 +156,11 @@ export const MostPopular = () => (
               <Card.Text className="card2-text">
                 READY Made Turn Key Lathe - Fanuc LR Mate
               </Card.Text>
-              <Button className="card2-button" size="lg" block>
-                View Product
-              </Button>
+              <a href="#products">
+                <Button className="card2-button" size="lg" block>
+                  View Product
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         </Col>

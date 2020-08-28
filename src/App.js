@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./Home";
+import { About } from "./About";
+import { Contact } from "./Contact";
 import { Work } from "./components/Work";
 import { Innerproduct } from "./Innerproduct";
 import { Jumbotron } from "./components/Jumbotron";
@@ -18,24 +20,26 @@ import "./App.css";
 function App() {
   return (
     <>
-      <NavigationBar />
-      <Jumbotron />
-      <Quickshop />
-      <MostPopular />
-      <Work />
-      <Solutions />
-      <Sales />
-      <Footer />
-      <Layout>
-        <Router>
+      <Router>
+        <NavigationBar />
+        <Jumbotron />
+        <Quickshop />
+        <MostPopular />
+        <Work />
+        <Solutions />
+        <Sales />
+        <Footer />
+        <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
             <Route path="/products" component={Products} />
             <Route path="/inner-product" component={Innerproduct} />
             <Route component={NoMatch} />
           </Switch>
-        </Router>
-      </Layout>
+        </Layout>
+      </Router>
     </>
   );
 }

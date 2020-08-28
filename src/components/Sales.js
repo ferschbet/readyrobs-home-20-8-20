@@ -66,9 +66,11 @@ export const Sales = () => (
             </p>
           </div>
           <p>
-            <Button className="sales-button" size="lg">
-              Contact Sales
-            </Button>
+            <a href="#contact-sales" className="hero-button">
+              <Button className="sales-button" size="lg">
+                Contact Sales
+              </Button>
+            </a>
           </p>
         </Col>
       </Row>

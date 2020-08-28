@@ -66,7 +66,11 @@ export const NavigationBar = () => (
       </Navbar.Toggle>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <NavDropdown title="Applications" id="collasible-nav-dropdown">
+          <NavDropdown
+            title="Applications"
+            id="collasible-nav-dropdown"
+            href="#applications"
+          >
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action
@@ -93,7 +97,7 @@ export const NavigationBar = () => (
           <Nav.Link href="#careers">Careers</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link className="customer-portal" href="#customer-portal">
+          <Nav.Link className="customer-portal" href="#customer">
             Customer Portal
           </Nav.Link>
           <Nav.Link
