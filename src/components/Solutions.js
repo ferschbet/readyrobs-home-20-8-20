@@ -12,6 +12,7 @@ import card3h from "./assets/card3h.png";
 
 const Styles = styled.div`
   .solutions-container {
+    width: 1140px;
     margin-top: 5rem;
     width: auto;
     margin-bottom: 100px;
@@ -92,9 +93,6 @@ const Styles = styled.div`
     .card3 {
       text-align: center;
       height: 12rem;
-      width: 15rem;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
   @media only screen and (min-width: 801px) and (max-width: 1000px) {

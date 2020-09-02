@@ -20,26 +20,28 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Router>
-        <NavigationBar />
-        <Jumbotron />
-        <Quickshop />
-        <MostPopular />
-        <Work />
-        <Solutions />
-        <Sales />
-        <Footer />
-        <Layout>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/products" component={Products} />
-            <Route path="/inner-product" component={Innerproduct} />
-            <Route component={NoMatch} />
-          </Switch>
-        </Layout>
-      </Router>
+      <main>
+        <Router>
+          <NavigationBar />
+          <Jumbotron />
+          <Quickshop />
+          <MostPopular />
+          <Work />
+          <Solutions />
+          <Sales />
+          <Footer />
+          <Layout>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/products" component={Products} />
+              <Route path="/inner-product" component={Innerproduct} />
+              <Route component={NoMatch} />
+            </Switch>
+          </Layout>
+        </Router>
+      </main>
     </>
   );
 }

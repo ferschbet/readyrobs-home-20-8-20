@@ -23,12 +23,8 @@ const Styles = styled.div`
     }
   }
   .jumbo-container {
-    width: 100vw;
+    width: 1140px;
     color: #efefef;
-    position: absolute;
-    z-index: 3;
-    padding-left: 8%;
-    padding-right: 8%;
     padding-top: 20vh;
   }
   .jumbo {
@@ -44,7 +40,6 @@ const Styles = styled.div`
     z-index: 1;
     margin-bottom: 0;
   }
-
   .text {
     font-family: "Roboto", sans-serif;
     font-size: 56px;
@@ -58,6 +53,12 @@ const Styles = styled.div`
     margin-top: 13px;
     max-width: 750px;
   }
+  @media only screen and (max-width: 800px) {
+    .jumbo-container {
+      justify-content: center;
+      width: 400px;
+    }
+  }
   @media only screen and (max-width: 1200px) {
     .text {
       font-size: 48px;
@@ -69,7 +70,10 @@ const Styles = styled.div`
       line-height: 3vh;
     }
   }
-  @media only screen and (min-width: 1800px) {
+  @media only screen and (min-width: 1600px) {
+    .jumbo {
+      width: 100%;
+    }
     .text {
       font-size: 3.8vw;
       font-weight: bold;
@@ -86,7 +90,9 @@ export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid className="jumbo">
       <Container className="jumbo-container">
-        <h1 className="text">Implement Robotic Automation on Your Own</h1>
+        <h1 className="text">
+          Implement Robotic<br></br>Automation on Your Own
+        </h1>
         <p className="other-text">
           Lorem ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

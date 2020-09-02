@@ -3,10 +3,12 @@ import { Row, Col, Button, Container } from "react-bootstrap";
 import styled from "styled-components";
 
 const Styles = styled.div`
-  .sales-container {
+  .sales {
     background-color: #f5f5f8;
+  }
+  .sales-container {
     background-size: cover;
-    width: 100vw;
+    width: 1140px;
     color: black;
     margin-top: 10rem;
     height: 350px;
@@ -43,6 +45,7 @@ const Styles = styled.div`
   @media only screen and (max-width: 800px) {
     .sales-container {
       height: 400px;
+      width: 400px;
     }
     .other-div {
       font-size: 20px;
@@ -54,26 +57,28 @@ const Styles = styled.div`
 
 export const Sales = () => (
   <Styles>
-    <Container className="sales-container" fluid>
-      <Row>
-        <Col xs={12} lg={12}>
-          <div className="other-div">
-            <p className="sales-text">
-              <strong>Request a Sales Person</strong>
-              <br />
-              Schedule a meeting with our enterprise sales team or a solutions
-              engineer to discuss your application.
+    <Container className="sales" fluid>
+      <Container className="sales-container">
+        <Row>
+          <Col xs={12} lg={12}>
+            <div className="other-div">
+              <p className="sales-text">
+                <strong>Request a Sales Person</strong>
+                <br />
+                Schedule a meeting with our enterprise sales team or a solutions
+                engineer to discuss your application.
+              </p>
+            </div>
+            <p>
+              <a href="#contact-sales" className="hero-button">
+                <Button className="sales-button" size="lg">
+                  Contact Sales
+                </Button>
+              </a>
             </p>
-          </div>
-          <p>
-            <a href="#contact-sales" className="hero-button">
-              <Button className="sales-button" size="lg">
-                Contact Sales
-              </Button>
-            </a>
-          </p>
-        </Col>
-      </Row>
+          </Col>
+        </Row>
+      </Container>
     </Container>
   </Styles>
 );

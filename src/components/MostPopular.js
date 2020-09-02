@@ -9,29 +9,26 @@ import styled from "styled-components";
 const Styles = styled.div`
   .pop-container {
     height: auto;
-    width: auto;
+    width: 1140px;
     padding-bottom: 10rem;
   }
   .most-popular {
+    width: 1140px;
     height: 30px;
+    margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 5rem;
-    margin-top: 5rem;
   }
   .pop-col {
-    max-width: 30rem;
     margin: auto;
   }
   .card2 {
     text-align: center;
     height: 24.9rem;
-    width: 16.5rem;
+    width: 264px;
     border: 1px solid #979797;
   }
   .cont-img {
-    /*    width: 75%;*/
     height: auto;
-    /*margin-top: 20px;*/
     margin-bottom: 80px;
   }
   .card2-text {
@@ -53,23 +50,20 @@ const Styles = styled.div`
   }
   @media only screen and (max-width: 800px) {
     .pop-container {
-      margin-left: 2.7rem;
-      margin-right: auto;
+      justify-content: center;
+      width: 300px;
+    }
+    .card2 {
+      justify-content: center;
     }
     .most-popular {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+      justify-content: center;
     }
     .pop-row {
-      align-items: center;
-      vertical-align: center;
-      /*margin-left: auto;
-      margin-right: auto;*/
+      justify-content: center;
     }
     .pop-col {
-      margin-left: auto;
-      margin-right: auto;
+      justify-content: center;
     }
     .pop-text {
       font-size: 36px;
@@ -79,11 +73,11 @@ const Styles = styled.div`
 
 export const MostPopular = () => (
   <Styles>
-    <Container className="pop-container" fluid>
+    <Container className="pop-container">
       <div className="most-popular">
         <h1 className="pop-text">Most Popular</h1>
       </div>
-      <Row className="pop-row mr-5 mb-5 ml-5">
+      <Row className="pop-row">
         <Col lg={3} md={6} className="pop-col">
           <Card className="card2 mb-3">
             <Card.Body>

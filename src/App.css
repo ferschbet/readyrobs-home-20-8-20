@@ -1,6 +1,19 @@
-body {
+main {
+  width: 1440px;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  main {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  main {
+    width: 100%;
+  }
 }
 
 body .bg-dark {

@@ -1,0 +1,348 @@
+1) REACT o BOOTSTRAP? --> Por ahora ya estoy usando REACT
+2) instalar REACT ROUTER? Lo he instalado para los links
+3) Imagen hero, logo o icono y otras imágenes de la página cómo obtenerlas? (¿página wp-admin Dashboard de Ready Robotics?)
+4) dónde debo compartir mi código (ejemplo: ¿página GitHub de Shellshock?) ya me dirás cómo hacerlo. Un saludo
+
+
+Buenos días Rick;
+12:27
+En primer lugar te espero, ya me responderás cuando puedas, comprendo que ahora mismo estéis muy liados con Incentivio u otros proyectos
+A ver, mis dudas iniciales son:
+1) REACT o BOOTSTRAP? --> Por ahora ya estoy usando REACT
+2) instalar REACT ROUTER? Lo he instalado para los links
+3) Imagen hero, logo o icono y otras imágenes de la página cómo obtenerlas? (¿página wp-admin Dashboard de Ready Robotics?)
+4) dónde debo compartir mi código (ejemplo: ¿página GitHub de Shellshock?) ya me dirás cómo hacerlo. Un saludo
+
+rick:slack_call:  12:29
+1) React y bootstrap son librerías distintas, React te ayuda a hacer web apps - bootstrap es simplemente una librería de CSS. Puedes usar las 2 juntas o solo React, como gustes.
+2) Si, pero puedes tener esas páginas en blanco (ya que el trabajo será realizar la home page no las otras)
+3) Puedes usar placeholders, cualquier imagen, no deben ser las mismas
+4) Súbelo a tu cuenta personal de github y me compartes el link
+
+fer  12:30
+muchísimas gracias Rick
+
+de nada Fer
+12:31
+avisame si tienes mas dudas, tienes 1 semana para esto por favor
+
+fer  12:31
+sí Rick, ok
+
+VER HOMEPAGE RR
+
+texto azul on hover:
+005478
+
+ampliar altura Navbar y ampliar logo verticalmente:
+	poner esto en App.CSS:
+	.navbar-brand {
+	  min-height: 80px;
+	  display: flex;
+	  align-items: center;
+	}
+
+cambiar posición del Jumbotron:
+ 
+poner muñequito en Customer Portal
+<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g class="fillHover" transform="translate(-1143.000000, -23.000000)" fill="#FFFFFF" id="Nav">
+                                    <g>
+                                        <g id="Group-2" transform="translate(1140.000000, 22.000000)">
+                                            <g id="Person-/-User-/-user-/-20">
+                                                <path d="M10,2.5 C11.7258898,2.5 13.125,3.89911016 13.125,5.625 C13.125,7.35088984 11.7258898,8.75 10,8.75 C8.27411016,8.75 6.875,7.35088984 6.875,5.625 C6.875,3.89911016 8.27411016,2.5 10,2.5 L10,2.5 Z M10,1.25 C7.58375422,1.25 5.625,3.20875422 5.625,5.625 C5.625,8.04124578 7.58375422,10 10,10 C12.4162458,10 14.375,8.04124578 14.375,5.625 C14.375,3.20875422 12.4162458,1.25 10,1.25 Z M16.25,18.75 L15,18.75 L15,15.625 C15,14.7961985 14.6707599,14.0013425 14.0847087,13.4152913 C13.4986575,12.8292401 12.7038015,12.5 11.875,12.5 L8.125,12.5 C6.39911016,12.5 5,13.8991102 5,15.625 L5,18.75 L3.75,18.75 L3.75,15.625 C3.75,13.2087542 5.70875422,11.25 8.125,11.25 L11.875,11.25 C14.2912458,11.25 16.25,13.2087542 16.25,15.625 L16.25,18.75 Z" id="Fill"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+	
+
+//ESTILOS JUMBOTRON desactivados
+const Styles = styled.div`
+  .jumbo {
+    background: url(${purpleCropped}) no-repeat fixed bottom;
+    background-size: cover;
+    color: #efefef;
+    height: 1200px;
+    position: relative;
+    z-index: -2;
+  }
+
+  .overlay {
+	background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+`;
+
+IMAGEN FONDO JUMBOTRON QUITADA:
+import grey from "../assets/grey.jpg";
+
+.hero-container {
+  background: url(${grey}) no-repeat fixed bottom;
+  background-size: cover;
+}
+
+background: url(${grey}) no-repeat fixed bottom;
+background-size: cover;
+1204 x 677  3685 x 2388
+
+1205 _____ 3685
+
+677  _____  X
+
+X = (677 x 3685) / 1205 = 2070
+
+Person / User / user / 20
+.person-user-user-20 {
+  height: 18px;
+  width: 14px;
+}
+
+Botón azul
+.button {
+  height: 64px;
+  width: 132px;
+}
+
+Fondo azul: 007CB0
+Texto: blanco
+
+Preguntas Ricardo:
+1) en la Navbar no sé dónde obtener el icono al lado de "Customer Portal" 
+2) He supuesto que el Toggle para el tamaño "mobile" es el texto "Menu" (igual que la página original de Ready Rob), pero si quieres puedo volver a hamburger, para no complicarme
+
+tipo de letra: IBM Plex Sans Regular
+
+Dudas Ricardo 25/08/2020:
+1) No sé cómo eliminar el espacio en el extremo derecho de la Navbar (espacio negro al lado del botón azul "Contact Sales")
+2) Sigo sin saber qué hacer con los logos de Ready Robotics y de "user" en la Navbar
+3) Sigo sin saber hacer que el jumbotron y la imagen de background se muevan al mismo tiempo hacia arriba (como en cualquier web); he intentado hacer "overlay" pero nada
+
+
+Estilo antiguo de "card" con botón en React-Bootstrap:
+        <Card style={{ width: "18rem" }}>
+
+
+ANTIGUO QUICK-SHOP de React-Bootstrap:
+
+const Styles = styled.div`
+  .quick-container {
+    height: auto;
+    max-width: 1440px;
+  }
+  .quick-shop {
+    height: 30px;
+    margin-bottom: 7%;
+    margin-left: 11%;
+    margin-top: 5%;
+  }
+  .card-col1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  .card1 {
+    text-align: center;
+  }
+  .card1-title {
+    text-align: left;
+  }
+  .card1-text {
+    text-align: left;
+  }
+  .card1-button {
+    text-align: center;
+  }
+`;
+
+export const Quickshop = () => (
+  <Styles>
+    <Container className="quick-container" fluid>
+      <div className="quick-shop">
+        <h1>Quick Shop</h1>
+        <br />
+      </div>
+      <CardColumns className="card-col1">
+        <Card className="card1  align-items-end">
+          <Card.Img variant="top" src={card1a} alt="image card1a" />
+          <Card.Body className="d-flex flex-column">
+            <Card.Title className="card1-title mt-auto">
+              Automation Packages
+            </Card.Title>
+            <Card.Text className="card1-text mt-auto">
+              Lorem Ipsum is simply dummy text of the printing a and industry.
+            </Card.Text>
+            <Button className="card1-button mt-auto" variant="primary">
+              Learn More
+            </Button>
+          </Card.Body>
+        </Card>
+        <Card className="card1">
+          <Card.Img variant="top" src={card1b} alt="image card1b" />
+          <Card.Body className="d-flex flex-column">
+            <Card.Title className="card1-title mt-auto">
+              Forge Bundles
+            </Card.Title>
+            <Card.Text className="card1-text mt-auto">
+              Lorem Ipsum is simply dummy text of the printing a and industry.
+            </Card.Text>
+            <Button className="card1-button mt-auto" variant="primary">
+              Learn More
+            </Button>
+          </Card.Body>
+        </Card>
+        <Card className="card1">
+          <Card.Img variant="top" src={card1c} alt="image card1c" />
+          <Card.Body className="d-flex flex-column">
+            <Card.Title className="card1-title mt-auto">
+              Forge Station
+            </Card.Title>
+            <Card.Text className="card1-text mt-auto">
+              Lorem Ipsum is simply dummy text of the printing a and industry.
+            </Card.Text>
+            <Button className="card1-button mt-auto" variant="primary">
+              Learn More
+            </Button>
+          </Card.Body>
+        </Card>
+      </CardColumns>
+    </Container>
+  </Styles>
+);
+
+
+Antiguo React-Bootstrap More Popular:
+
+const Styles = styled.div`
+  .pop-container {
+    height: auto;
+    width: auto;
+  }
+  .more-popular {
+    height: 30px;
+    margin-bottom: 7%;
+    margin-left: 11%;
+    margin-top: 5%;
+  }
+  .card-col2 {
+    padding: 0;
+    margin-left: 10%;
+  }
+  .card2 {
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+  .cont-img {
+    width: 75%;
+    height: auto;
+  }
+  .card2-text {
+    color: #282a2b;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0.33px;
+    line-height: 19px;
+  }
+  .card2-button {
+    text-align: center;
+  }
+`;
+
+export const MorePopular = () => (
+  <Styles>
+    <Container className="pop-container" fluid>
+      <div className="more-popular">
+        <h1>More Popular</h1>
+        <br />
+      </div>
+      <CardColumns className="card-col2">
+        <Card className="card2">
+          <Card.Img
+            className="cont-img"
+            variant="top"
+            src={card2a}
+            alt="image card2a"
+          />
+          <Card.Body>
+            <Card.Text className="card2-text">
+              READY Made Turn Key Lathe - Fanuc LR Mate
+            </Card.Text>
+            <Button className="card2-button" variant="primary">
+              View Product
+            </Button>
+          </Card.Body>
+        </Card>
+        <Card className="card2">
+          <Card.Img
+            className="cont-img"
+            variant="top"
+            src={card2b}
+            alt="image card2b"
+          />
+          <Card.Body>
+            <Card.Text className="card2-text">
+              READY Made Turn Key Lathe - Fanuc LR Mate
+            </Card.Text>
+            <Button className="card2-button" variant="primary">
+              View Product
+            </Button>
+          </Card.Body>
+        </Card>
+        <Card className="card2">
+          <Card.Img
+            className="cont-img"
+            variant="top"
+            src={card2c}
+            alt="image card2c"
+          />
+          <Card.Body>
+            <Card.Text className="card2-text">
+              READY Made Turn Key Lathe - Fanuc LR Mate
+            </Card.Text>
+            <Button className="card2-button" variant="primary">
+              View Product
+            </Button>
+          </Card.Body>
+        </Card>
+        <Card className="card2">
+          <Card.Img
+            className="cont-img"
+            variant="top"
+            src={card2d}
+            alt="image card2d"
+          />
+          <Card.Body>
+            <Card.Text className="card2-text">
+              READY Made Turn Key Lathe - Fanuc LR Mate
+            </Card.Text>
+            <Button className="card2-button" variant="primary">
+              View Product
+            </Button>
+          </Card.Body>
+        </Card>
+      </CardColumns>
+    </Container>
+  </Styles>
+);
+
+F5F5F8
+29.7 _____ 35
+22.6 _____ X
+
+X = 22,6 x 35 / 29,7 = 26,6
+
+1) No sé cómo eliminar el espacio en el extremo derecho de la Navbar (espacio negro al lado del botón azul "Contact Sales")
+
+
+<button class="btn btn-success">¿Soy un botón o un enlace?</button>
+<a href="#" class="btn btn-success">¿Soy un botón o un enlace?</a>

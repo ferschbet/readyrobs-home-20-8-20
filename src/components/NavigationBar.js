@@ -8,8 +8,7 @@ const Styles = styled.div`
     font-family: "Barlow", sans-serif;
     font-size: 16px;
     font-weight: lighter;
-    margin-right: -15px;
-    padding: 0 16px;
+    padding: 0;
   }
   @media only screen and (max-width: 1200px) {
     .navbar {
@@ -50,9 +49,15 @@ const Styles = styled.div`
     color: white;
     background-color: #007cb0;
     margin-top: 0px;
+    margin-right: 0px;
     &:hover {
       color: white !important;
       background-color: #006996;
+    }
+  }
+  @media only screen and (max-width: 960px) {
+    .toggle-text {
+      background-color: #000 !important;
     }
   }
 `;
@@ -63,7 +68,7 @@ export const NavigationBar = () => (
       <Navbar.Brand className="nav-brand" href="#home">
         Ready Robotics
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav">
+      <Navbar.Toggle className="menu" aria-controls="responsive-navbar-nav">
         <span className="toggle-text">Menu</span>
       </Navbar.Toggle>
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -102,11 +107,7 @@ export const NavigationBar = () => (
           <Nav.Link className="customer-portal" href="#customer">
             Customer Portal
           </Nav.Link>
-          <Nav.Link
-            className="contact-sales"
-            eventKey={2}
-            href="#contact-sales"
-          >
+          <Nav.Link className="contact-sales" href="#contact-sales">
             Contact Sales
           </Nav.Link>
         </Nav>
