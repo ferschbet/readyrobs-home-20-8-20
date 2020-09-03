@@ -1,6 +1,7 @@
 import React from "react";
 import { Jumbotron as Jumbo, Button, Container } from "react-bootstrap";
 import styled from "styled-components";
+/*import { MDBContainer } from "mdbreact";*/
 import homeRectangle from "./assets/homeRectangle.png";
 
 const Styles = styled.div`
@@ -24,14 +25,11 @@ const Styles = styled.div`
   }
   .jumbo-container {
     width: 1140px;
-    height: 300px;
+    max-height: 320px;
     color: #efefef;
     text-align: left;
-    margin: 0 50px;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-67.5%);
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .jumbo {
     background: url(${homeRectangle}) no-repeat scroll center bottom;
@@ -45,7 +43,9 @@ const Styles = styled.div`
     right: 0;
     z-index: 1;
     margin-bottom: 0;
+    display: flex;
   }
+
   .text {
     font-family: "Roboto", sans-serif;
     font-size: 56px;
@@ -95,7 +95,7 @@ const Styles = styled.div`
 export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid className="jumbo">
-      <Container className="jumbo-container align-self-center">
+      <Container className="jumbo-container">
         <h1 className="text">
           Implement Robotic<br></br>Automation on Your Own
         </h1>
