@@ -24,8 +24,14 @@ const Styles = styled.div`
   }
   .jumbo-container {
     width: 1140px;
+    height: 300px;
     color: #efefef;
-    padding-top: 20vh;
+    text-align: left;
+    margin: 0 50px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-67.5%);
   }
   .jumbo {
     background: url(${homeRectangle}) no-repeat scroll center bottom;
@@ -89,7 +95,7 @@ const Styles = styled.div`
 export const Jumbotron = () => (
   <Styles>
     <Jumbo fluid className="jumbo">
-      <Container className="jumbo-container">
+      <Container className="jumbo-container align-self-center">
         <h1 className="text">
           Implement Robotic<br></br>Automation on Your Own
         </h1>
